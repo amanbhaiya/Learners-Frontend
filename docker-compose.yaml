@@ -1,0 +1,16 @@
+services:
+  app:
+    container_name: learner-next-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    restart: always
+    environment:
+      - WATCHPACK_POLLING=true 
+      - NODE_ENV=development
