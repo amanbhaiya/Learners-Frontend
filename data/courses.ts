@@ -1,4 +1,4 @@
-import { Course } from "@/types/interfaces"
+import { Course } from "@/lib/interfaces"
 
 // courseConfig.ts
 export const courses: Course[] = [

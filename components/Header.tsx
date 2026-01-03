@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useRef, useEffect } from "react"
-import { User } from "@/types/interfaces"
+import { User } from "@/lib/interfaces"
 import { HiOutlineCog, HiOutlineLogout, HiOutlineUserCircle } from "react-icons/hi"
 import Button from "@/components/form/Button"
 import Title from "@/components/courses/Title"

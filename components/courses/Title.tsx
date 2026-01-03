@@ -1,4 +1,4 @@
-import { Course } from "@/types/interfaces"
+import { Course } from "@/lib/interfaces"
 
 const Title = ({ course }: { course: Course }) => {
     return (

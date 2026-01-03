@@ -1,11 +1,11 @@
-const Logo = ({ className }: { className: string }) => {
+import { cn } from "@/lib/functions";
+
+const Logo = ({ className, onClick }: { className?: string, onClick?: () => void }) => {
     return (
-        <div className={className}>
-            <h2 className="text-3xl font-black">
-                <span className='text-blue-500'>LEARN</span>
-                <span className="text-red-600">ERS</span>
-            </h2>
-        </div>
+        <span className={cn("text-3xl font-black cursor-pointer", className)} onClick={onClick}>
+            <span className='text-blue-600'>LEARN</span>
+            <span className="text-red-600">ERS</span>
+        </span>
     );
 };
 

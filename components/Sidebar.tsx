@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
-import { SideMenu } from '@/types/interfaces'
+import { SideMenu } from '@/lib/interfaces'
 import { HiOutlineChevronDown } from 'react-icons/hi'
 
 const Sidebar = ({ menus }: { menus: SideMenu[] }) => {
