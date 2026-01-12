@@ -17,7 +17,7 @@ const CTA: React.FC = () => {
                     Join thousands of students already learning on LEARNERS platform
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button variant="outline" className="px-8 py-4 bg-white text-blue-600 font-semibold" icon={<FiArrowRight className="w-5 h-5" />} iconEnd>Get Started Free</Button>
+                    <Button variant="outline" className="px-8 py-4 bg-white text-blue-600 font-semibold" trailingIcon={FiArrowRight}>Get Started Free</Button>
                 </div>
             </div>
         </section>

@@ -1,4 +1,3 @@
-import React, { useEffect, useRef, useState } from 'react';
 import {
     FiTrendingUp,
     FiAward,
@@ -7,7 +6,7 @@ import {
     FiStar,
 } from 'react-icons/fi';
 import WaveBackgroundAnimation from '@/components/WaveBackgroundAnimation';
-import Button from '../form/Button';
+import Button from '@/components/form/Button';
 
 const Hero = () => {
     return (
@@ -33,8 +32,8 @@ const Hero = () => {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Button className="px-8 py-4 font-semibold" icon={<FiArrowRight className="w-5 h-5" />} iconEnd>Start Learning Free</Button>
-                            <Button variant="outline" className="px-8 py-4 font-semibold" icon={<FiPlayCircle className="w-5 h-5" />}>Watch Demo</Button>
+                            <Button className="px-8 py-4 font-semibold" trailingIcon={FiArrowRight}>Start Learning Free</Button>
+                            <Button variant="outline" className="px-8 py-4 font-semibold" leadingIcon={FiPlayCircle}>Watch Demo</Button>
                         </div>
 
                         {/* Stats */}

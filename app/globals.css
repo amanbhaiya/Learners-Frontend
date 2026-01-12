@@ -26,3 +26,18 @@
     width: max-content;
     animation: marquee 100s linear infinite;
 }
+
+
+/* Chrome, Edge, Brave, Opera */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+/* Safari (WebKit) */
+input[type="password"]::-webkit-credentials-auto-fill-button {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}

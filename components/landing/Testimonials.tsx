@@ -14,7 +14,7 @@ const Testimonials = ({ testimonials }: { testimonials: Testimonial[] }) => {
 
                 {/* Horizontal scroll container */}
                 <div className="overflow-hidden relative">
-                    <div className="flex animate-marque gap-5">
+                    <div className="flex animate-marquee gap-5">
                         {testimonials.concat(testimonials).map((t, i) => (
                             <div key={i}>
                                 <TestimonialCard testimonial={t} />

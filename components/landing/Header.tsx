@@ -6,6 +6,7 @@ import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import Button from "@/components/form/Button";
 import { Menu } from "@/lib/props";
+import { Routes } from "@/lib/routes";
 
 const Header = ({ menus }: { menus: Menu[] }) => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -30,8 +31,8 @@ const Header = ({ menus }: { menus: Menu[] }) => {
 
                     {/* CTA Buttons */}
                     <div className="hidden md:flex items-center gap-4">
-                        <Button variant="link">Login</Button>
-                        <Button variant="primary" className="px-6">Get Started</Button>
+                        <Button variant="link" href={Routes.LOGIN}>Login</Button>
+                        <Button variant="primary" className="px-6 py-2">Get Started</Button>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -49,8 +50,8 @@ const Header = ({ menus }: { menus: Menu[] }) => {
                             ))}
                         </nav>
                         <div className="flex flex-col gap-2 px-4">
-                            <Button variant="outline">Login</Button>
-                            <Button variant="primary">Get Started</Button>
+                            <Button variant="outline" className="py-2" href={Routes.LOGIN}>Login</Button>
+                            <Button variant="primary" className="py-2">Get Started</Button>
                         </div>
                     </div>
                 )}

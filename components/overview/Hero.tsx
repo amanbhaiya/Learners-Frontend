@@ -85,7 +85,7 @@ const Hero = ({ course }: { course: any }) => {
 
                     {/* Mobile Preview Card */}
                     <div className="lg:hidden bg-white text-gray-900 rounded-xl shadow-2xl overflow-hidden">
-                        <div className="aspect-video bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center relative">
+                        <div className="aspect-video bg-linear-to-br from-blue-500 to-blue-700 flex items-center justify-center relative">
                             <FaPlayCircle className="w-16 h-16 text-white opacity-90" />
                             <div className="absolute top-4 right-4 bg-black bg-opacity-75 text-white px-2 py-1 rounded text-xs font-semibold">
                                 Preview

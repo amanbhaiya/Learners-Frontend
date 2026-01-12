@@ -20,7 +20,7 @@ const Courses = ({ courses }: { courses: Course[] }) => {
                     ))}
                 </div>
                 <div className="flex justify-center items-center mt-8">
-                    <Button variant="outline" className="px-8 py-4 font-semibold" icon={<FiArrowRight className="w-5 h-5" />} iconEnd>View more</Button>
+                    <Button variant="outline" className="px-8 py-4 font-semibold" trailingIcon={FiArrowRight}>View more</Button>
                 </div>
             </div>
         </section>

@@ -46,13 +46,13 @@ const Header = ({ user }: { user: User }) => {
                         </div>
 
                         <div className="flex flex-col items-start p-2">
-                            <Button variant="ghost" href="/" className="w-full flex gap-1 justify-start" icon={<HiOutlineUserCircle className="h-5 w-5" />}>
+                            <Button variant="ghost" href="/" className="w-full flex gap-1 justify-start" leadingIcon={HiOutlineUserCircle}>
                                 Profile
                             </Button>
-                            <Button variant="ghost" href="/" className="w-full flex gap-1 justify-start" icon={<HiOutlineCog className="h-5 w-5" />}>
+                            <Button variant="ghost" href="/" className="w-full flex gap-1 justify-start" leadingIcon={HiOutlineCog}>
                                 Settings
                             </Button>
-                            <Button variant="ghost" href="/" className="w-full flex gap-1 justify-start text-red-600 hover:bg-red-50" icon={<HiOutlineLogout className="h-5 w-5" />}>
+                            <Button variant="ghost" href="/" className="w-full flex gap-1 justify-start text-red-600 hover:bg-red-50" leadingIcon={HiOutlineLogout}>
                                 Logout
                             </Button>
                         </div>
